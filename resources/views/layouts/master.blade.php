@@ -9,6 +9,8 @@
 
 <body>
     @section('background')
+    <div id="star-map">
+    </div>
     @show
     <div class="content">
         @yield('content')
