@@ -13,6 +13,10 @@
     </div>
     @show
     <div class="content">
+        
+        <div class="navigation">
+            <i class="fa-solid fa-bars fa-2xl naviButton"></i>
+        </div>
         @yield('content')
 
     </div>
