@@ -28,3 +28,7 @@ window.onload = function () {
         }
     }
 }
+
+$('#naviButton').on("click", function() {
+    console.log('test');
+})
