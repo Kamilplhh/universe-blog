@@ -20,8 +20,11 @@ body {
     height: 100%;
 }
 
+.naviButton {
+    transition: .3s;
+}
+
 .naviButton:hover {
     transform: scale(1.2);
-    cursor: pointer;
-    transition: .3s;
+    cursor: pointer;   
 }

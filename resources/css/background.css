@@ -7,7 +7,7 @@
 }
 
 .star {
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
     width: 0;
     display: inline-block;

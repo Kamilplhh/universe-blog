@@ -2,6 +2,8 @@ import './bootstrap';
 import '../css/app.css';
 import '../css/background.css';
 import "@fortawesome/fontawesome-free/css/all.css";
+import $ from 'jquery';
+window.$ = $;
 
 window.onload = function () {
     let w = window.innerWidth;
