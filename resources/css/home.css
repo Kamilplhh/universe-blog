@@ -25,10 +25,14 @@
     border-radius: 5% 5% 0 0;
     padding: 2em;
     color: white;
-    overflow:auto;
+    overflow: auto;
 }
 
-.block {
+.row {
+    margin-bottom: 6%;
+}
+
+.smallBlock {
     padding: .5em;
     height: 420px;
 }
@@ -36,13 +40,37 @@
 .photo {
     width: 100%;
     height: 320px;
-    background-color: aliceblue;
+    background-color: rgb(75, 117, 153);
+}
+
+.bigBlock {
+    height: 700px !important;
+}
+
+.bigBlock > .photo {
+    height: 275px;
+}
+
+.onePhoto {
+    height: 620px !important;
+}
+
+.midBlock {
+    height: 550px;
+}
+
+.midBlock > .photo {
+    height: 450px;
+}
+
+.midBlock > .text {
+    height: 100px !important;
 }
 
 .text {
     padding: 0.1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -54,4 +82,25 @@
 .text p {
     font-family: 'Pangolin', cursive;
     font-weight: normal;
+    letter-spacing: .15rem !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px grey;
+	border-radius: 10px;
+	background-color: rgba(58, 58, 58,.5);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 185, 185);
 }
