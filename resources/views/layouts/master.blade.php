@@ -15,6 +15,12 @@
     <div class="content">
         
         <div class="navigation">
+            <div class="navbar">
+                <p>Today's planet</p>
+                <p>Today's planet</p>
+                <p>Today's planet</p>    
+                <p>Today's planet</p>
+            </div>
             <i class="fa-solid fa-bars fa-2xl" id="naviButton"></i>
         </div>
         @yield('content')

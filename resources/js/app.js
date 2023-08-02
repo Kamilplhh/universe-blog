@@ -6,6 +6,7 @@ import $ from 'jquery';
 window.$ = $;
 
 window.onload = function () {
+    $('.navbar').css('display', 'flex');
     let w = window.innerWidth;
     let h = window.innerHeight;
     for (let i = 0; i < w / 2; i++) {
@@ -24,11 +25,13 @@ window.onload = function () {
             star.style.top = top + 'px'
             star.style.animation = delay + 'ms blink infinite'
         } else {
-            star.style.animation = delay + 's blink infinite,' + delay + 's move infinite'
+            star.style.animation = delay + 's blink infinite,' + delay/2 + 's move infinite'
         }
     }
 }
 
 $('#naviButton').on("click", function() {
-    console.log('test');
+    $(this).css('transition', '.54s linear')
+    $(this).toggleClass('show');
+    $('.navbar').toggleClass('show');
 })

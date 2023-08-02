@@ -21,10 +21,41 @@ body {
 }
 
 #naviButton {
-    transition: .3s;
+    transform: translateX(-120px);
 }
 
 #naviButton:hover {
-    transform: scale(1.2);
+    transform: translateX(-120px) scale(1.2) !important;
     cursor: pointer;   
+}
+
+.navbar {
+    display: none;
+    width: 120px;
+    padding: 0;
+    margin-right: 1em;
+    flex-direction: column;
+    transition: .6s linear;
+    transform: translateX(-120px); 
+}
+
+.navbar p {
+    transition: .3s ease-in-out;
+}
+
+.navbar p:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.navbar.show {
+    transform: translateX(0px);
+}
+
+#naviButton.show {
+    transform: translateX(0px) !important;
+}
+
+#naviButton.show:hover {
+    transform: translateX(0px) scale(1.2) !important;
 }
