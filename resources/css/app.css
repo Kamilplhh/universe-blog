@@ -13,7 +13,6 @@ body {
 .navigation {
     color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: absolute;
     min-width: 100px;
@@ -41,6 +40,11 @@ body {
 
 .navbar p {
     transition: .3s ease-in-out;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
 }
 
 .navbar p:hover {

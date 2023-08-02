@@ -17,7 +17,7 @@
     <div class="content">
         <div class="navigation">
             <div class="navbar">
-                <p>Today's planet</p>
+                <p><a href="/">Home</a></p>
                 <p>Today's planet</p>
                 <p>Today's planet</p>
                 <p>Today's planet</p>
