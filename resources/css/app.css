@@ -36,6 +36,7 @@ body {
     flex-direction: column;
     transition: .6s linear;
     transform: translateX(-120px); 
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
 }
 
 .navbar p {
