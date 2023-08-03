@@ -15,7 +15,13 @@
     <div id="star-map">
     </div>
     @show
-
+    <div class="loader">
+        <div class="loadingBlock">
+            <p class="dot"></p>
+            <p class="dot" id="dot"></p>
+            <p class="dot"></p>
+        </div>
+    </div>
     <div class="content">
         <div class="navigation">
             <div class="navbar">
