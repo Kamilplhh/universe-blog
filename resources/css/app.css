@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(ellipse at bottom, #1b2735 -20%,#090a0f 90%);
+    background: radial-gradient(ellipse at bottom, #1b2735 -20%, #090a0f 90%);
 }
 
 .content {
@@ -27,7 +27,7 @@ body {
 
 #naviButton:hover {
     transform: translateX(-120px) scale(1.2) !important;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .navbar {
@@ -37,7 +37,7 @@ body {
     margin-right: 1em;
     flex-direction: column;
     transition: .6s linear;
-    transform: translateX(-120px); 
+    transform: translateX(-120px);
     text-shadow: 0px 0px 4px rgb(255, 255, 255);
     text-align: center;
 }
@@ -87,19 +87,21 @@ body {
     height: 20vw;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0,.4);
+    background-color: rgba(0, 0, 0, .4);
     color: white;
     box-shadow: -4vw 4vw 50px -100px rgb(243, 29, 29);
-    animation: boxShadow 3s linear infinite;
+    animation: boxShadow 2s linear infinite;
 }
 
 .dot {
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     background-color: white;
     margin: 10%;
-    animation: dot 3s linear infinite;
+    animation: dot 2s linear infinite;
+    outline-offset: 0;
+    outline: 0;
 }
 
 #dot {
@@ -109,10 +111,13 @@ body {
 @keyframes dot {
     33% {
         transform: scale(2);
+        outline-offset: 4px;
+        outline: 3px solid rgb(90, 89, 89);
     }
 
     66% {
         transform: scale(.5);
+        outline-offset: 0px;
     }
 }
 
@@ -130,24 +135,31 @@ body {
     2% {
         box-shadow: -4vw 5vw 50px -100px rgb(243, 29, 29);
     }
-    24%{
+
+    24% {
         box-shadow: 4vw 4vw 50px -100px rgb(82, 238, 10);
     }
-    27%{
+
+    27% {
         box-shadow: 4vw 4vw 50px -100px rgb(82, 238, 10);
     }
-    49%{
+
+    49% {
         box-shadow: 4vw -4vw 50px -100px rgb(48, 184, 218);
     }
+
     52% {
         box-shadow: 4vw -4vw 50px -100px rgb(48, 184, 218);
     }
-    74%{
+
+    74% {
         box-shadow: -4vw -4vw 50px -100px rgb(151, 43, 240);
     }
+
     77% {
         box-shadow: -5vw -4vw 50px -100px rgb(151, 43, 240);
     }
+
     100% {
         box-shadow: -4vw 4vw 50px -100px rgb(243, 29, 29);
     }

@@ -7,6 +7,7 @@ import $ from 'jquery';
 window.$ = $;
 
 window.onload = function () {
+    setTimeout(loadingPage, 2000);
     $('.navbar').css('display', 'flex');
     let w = window.innerWidth;
     let h = window.innerHeight;
@@ -31,8 +32,13 @@ window.onload = function () {
     }
 }
 
+function loadingPage() {
+    $('.loader').css("display","none");
+    $('.content').css("display","flex");
+}
+
 $('#naviButton').on("click", function() {
-    $(this).css('transition', '.54s linear')
+    $(this).css('transition', '.54s linear');
     $(this).toggleClass('show');
     $('.navbar').toggleClass('show');
 })
