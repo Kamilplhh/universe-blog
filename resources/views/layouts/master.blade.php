@@ -19,10 +19,10 @@
     <div class="content">
         <div class="navigation">
             <div class="navbar">
-                <p><a href="/">Home</a></p>
-                <p>Today's planet</p>
-                <p>Today's planet</p>
-                <p>Today's planet</p>
+                <p class="link"><a href="/">Home</a></p>
+                <p class="link"><a href="">News</a></p>
+                <p class="link"><a href="">Today's planet</a></p>
+                <p class="link"><a href="">Upcoming events</a></p>
             </div>
             <i class="fa-solid fa-bars fa-2xl" id="naviButton"></i>
         </div>

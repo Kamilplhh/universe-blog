@@ -64,6 +64,20 @@
                 </div>
             </div>
         </div>
+        <div class="astronauts">
+            <h2>People in space now</h2>
+            <ul>
+                <li>
+                    test
+                </li>
+                <li>
+                    test
+                </li>
+                <li>
+                    test
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 @stop
