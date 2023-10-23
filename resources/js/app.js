@@ -36,9 +36,3 @@ function loadingPage() {
     $('.loader').css("display","none");
     $('.content').css("display","flex");
 }
-
-$('#naviButton').on("click", function() {
-    $(this).css('transition', '.54s linear');
-    $(this).toggleClass('show');
-    $('.navbar').toggleClass('show');
-})

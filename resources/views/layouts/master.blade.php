@@ -30,7 +30,6 @@
                 <p class="link"><a href="">Today's planet</a></p>
                 <p class="link"><a href="">Upcoming events</a></p>
             </div>
-            <i class="fa-solid fa-bars fa-2xl" id="naviButton"></i>
         </div>
         @yield('content')
 
