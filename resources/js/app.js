@@ -11,7 +11,7 @@ window.onload = function () {
     $('.navbar').css('display', 'flex');
     let w = window.innerWidth;
     let h = window.innerHeight;
-    for (let i = 0; i < w / 2; i++) {
+    for (let i = 0; i < w / 4; i++) {
 
         let star = document.createElement('div');
         star.className = 'star';
