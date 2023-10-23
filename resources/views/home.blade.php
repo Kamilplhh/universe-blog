@@ -6,7 +6,7 @@
         <h1>HOME</h1>
 <!-- Big block -->
         <div class="row">
-            <div class="col-xl-7 col-lg-12 pt-5">
+            <div class="col-xl-7 col-lg-12">
                 <div class="photo onePhoto"></div>
                 <div class="text">
                     <p>MILKY WAY, OBSERVING</p>
