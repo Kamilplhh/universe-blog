@@ -6,14 +6,14 @@
         <h1>HOME</h1>
 <!-- Big block -->
         <div class="row">
-            <div class="col-7 bigBlock">
+            <div class="col-xl-7 col-lg-12 pt-5">
                 <div class="photo onePhoto"></div>
                 <div class="text">
                     <p>MILKY WAY, OBSERVING</p>
                     Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
                 </div>
             </div>
-            <div class="col-sm bigBlock">
+            <div class="col-xl-5 col-lg-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>EXOTIC OBJECTS, MILKY WAY</p>
@@ -28,14 +28,14 @@
         </div>
 <!-- Mid block -->
         <div class="row">
-            <div class="col-sm midBlock">
+        <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>MILKY WAY, OBSERVING</p>
                     Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
                 </div>
             </div>
-            <div class="col-sm midBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>EXOTIC OBJECTS, MILKY WAY</p>
@@ -45,47 +45,49 @@
         </div>
 <!-- Carousel block -->
         <div class="carousel">
-            <div class="col-sm smallBlock">
+            <div class="row">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>MILKY WAY, OBSERVING</p>
                     Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
                 </div>
             </div>
-            <div class="col-sm smallBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>EXOTIC OBJECTS, MILKY WAY</p>
                     Rising star in astronomy: Katie Bouman
                 </div>
             </div>
-            <div class="col-sm smallBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>COSMOLOGY, MILKY WAY, SCIENCE</p>
                     The Great Hum: Scientists finally detect continuous gravitational waves rippling across space-time
                 </div>
             </div>
-            <div class="col-sm smallBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>EXOTIC OBJECTS, MILKY WAY</p>
                     Rising star in astronomy: Katie Bouman
                 </div>
             </div>
-            <div class="col-sm smallBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>COSMOLOGY, MILKY WAY, SCIENCE</p>
                     The Great Hum: Scientists finally detect continuous gravitational waves rippling across space-time
                 </div>
             </div>
-            <div class="col-sm smallBlock">
+            <div class="col-lg-6 col-md-12">
                 <div class="photo"></div>
                 <div class="text">
                     <p>COSMOLOGY, MILKY WAY, SCIENCE</p>
                     The Great Hum: Scientists finally detect continuous gravitational waves rippling across space-time
                 </div>
+            </div>
             </div>
         </div>
         <div class="astronauts">
