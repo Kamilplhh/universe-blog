@@ -26,9 +26,9 @@
         <div class="navigation">
             <div class="navbar">
                 <p class="link"><a href="/">Home</a></p>
-                <p class="link"><a href="">News</a></p>
-                <p class="link"><a href="">Today's planet</a></p>
-                <p class="link"><a href="">Upcoming events</a></p>
+                <p class="link"><a href="/news">News</a></p>
+                <p class="link"><a href="/planet">Today's planet</a></p>
+                <p class="link"><a href="/events">Upcoming events</a></p>
             </div>
         </div>
         @yield('content')
