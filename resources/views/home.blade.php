@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@vite('resources/css/home.css')
 
 @section('content')
 <div class="home">

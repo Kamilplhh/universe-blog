@@ -101,10 +101,6 @@
         margin-left: 18% !important;
     }
 
-    .navbar {
-        width: 15% !important;
-    }
-
     .homeContent h1 {
         left: 20% !important;
     }
@@ -114,11 +110,6 @@
     .home {
         margin-left: 0% !important;
         width: 100% !important;
-    }
-
-    .navbar {
-        display: none;
-        width: 0% !important;
     }
 
     .homeContent h1 {
