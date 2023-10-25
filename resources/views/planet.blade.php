@@ -4,7 +4,7 @@
 @section('content')
 <div class="home">
     <div class="homeContent">
-        <h1>News</h1>
+        <h1>Today's planet</h1>
         <!-- Big block -->
         <div class="row">
                 <div class="col-12"></div>

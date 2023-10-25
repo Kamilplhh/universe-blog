@@ -5,8 +5,7 @@
 <div class="home">
     <div class="homeContent">
         <h1>News</h1>
-        <!-- Big block -->
-        <div class="row">
+        <div class="row mt-1">
             <div class="text-center col-12">
                 <p>MILKY WAY, OBSERVING</p>
             </div>
