@@ -22,7 +22,6 @@ body {
 }
 
 .navbar {
-    display: none;
     width: 120px;
     padding: 0 !important;
     margin-right: 1em;

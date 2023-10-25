@@ -1,7 +1,7 @@
 .home {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
     height: 100%;
     padding-top: 3%;
     text-align: center;
@@ -42,8 +42,9 @@
 }
 
 .onePhoto {
-    height: 95% !important;
+    height: 92% !important;
 }
+
 .text {
     padding: 0.1em;
     display: flex;
@@ -88,4 +89,39 @@
     list-style-type: none;
     margin: 2em 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    .onePhoto {
+        height: 80% !important;
+        min-height: 550px;
+    }
+
+    .home {
+        margin-left: 18% !important;
+    }
+
+    .navbar {
+        width: 15% !important;
+    }
+
+    .homeContent h1 {
+        left: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .home {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+
+    .navbar {
+        display: none;
+        width: 0% !important;
+    }
+
+    .homeContent h1 {
+        left: 0% !important;
+    }
 }
