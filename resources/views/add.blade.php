@@ -16,7 +16,7 @@
                 </select>
             </div>
         </div>
-        <div class="addPanel">
+        <div id="addPanel">
 
         </div>
     </div>
