@@ -16,6 +16,9 @@
                 </select>
             </div>
         </div>
+        <div class="addPanel">
+
+        </div>
     </div>
 </div>
 @stop
