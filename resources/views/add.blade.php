@@ -1,5 +1,21 @@
 @extends('layouts.master')
+@vite('resources/css/home.css')
+@vite('resources/js/add.js')
 
 @section('content')
-
+<div class="home">
+    <div class="homeContent">
+        <h1>Add News</h1>
+        <div class="mt-1 text-center">
+            <label for="style-select">Choose style:</label><br>
+            <div class="dropdown dropdown-dark">
+                <select name="styles" id="style-select" class="dropdown-select">
+                    <option value="1">Style #1</option>
+                    <option value="2">Style #2</option>
+                    <option value="3">Style #3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 @stop

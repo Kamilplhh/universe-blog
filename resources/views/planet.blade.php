@@ -5,7 +5,6 @@
 <div class="home">
     <div class="homeContent">
         <h1>Today's planet</h1>
-        <!-- Big block -->
         <div class="row">
                 <div class="col-12"></div>
                 <div class="text-center col-12 mt-5">

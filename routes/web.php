@@ -28,3 +28,7 @@ Route::get('/planet', function () {
 Route::get('/events', function () {
     return view('events');
 });
+
+Route::get('/add', function () {
+    return view('add');
+});
