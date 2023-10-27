@@ -128,6 +128,7 @@
   }
 
   .addPhoto{
+    border-radius: 10px;
     transition: 0.2s ease-out;
     text-shadow: 1px 1px #0a0a0a !important;
   }
@@ -138,4 +139,13 @@
     color: rgb(59, 59, 59);
     text-shadow: 0px 1px !important;
   }
-  
+
+  .addInput {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    box-sizing: border-box !important;
+    border: 2px solid #ccc !important;
+    border-radius: 4px !important;
+    background-color: #f8f8f8 !important;
+    font-size: 16px !important;
+  }

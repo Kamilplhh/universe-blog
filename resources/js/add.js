@@ -3,11 +3,11 @@ import $ from 'jquery';
 window.$ = $;
 
 const firstS = '<div class="photo addPhoto col-6 offset-md-3 mt-1 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>'+
-    '<input type="text" class="col-6 offset-md-3 mt-1 mb-4" placeholder="News title"></input>'+
-'<textarea class="col-7 mt-2" placeholder="News main text"></textarea>'+
+    '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>'+
+'<textarea class="col-7 mt-2 addInput" placeholder="News main text"></textarea>'+
 '<div class="photo addPhoto offset-md-1 col-4 my-5 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>'+
 '<div class="photo addPhoto col-4 my-5 mb-4 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>'+
-'<textarea class="col-7 offset-md-1 mt-4" placeholder="Second main text"></textarea>';
+'<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
 const secondS = "<p>2</p>";
 
