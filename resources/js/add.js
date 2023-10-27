@@ -19,9 +19,11 @@ const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput"
     '<div class="photo addPhoto col-4 my-5 mb-4 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
-const thirdS = "<p>3</p>";
+const thirdS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
+    '<div class="photo addPhoto col-10 offset-md-1 my-3 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+    '<textarea class="col-10 offset-md-1 my-4 addInput" placeholder="News main text"></textarea>';
 
-$(document).ready(style2());
+$(document).ready(style1());
 
 $("#style-select").on("change", function () {
     let selected = $("#style-select option:selected").val();
