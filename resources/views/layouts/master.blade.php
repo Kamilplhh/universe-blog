@@ -29,6 +29,7 @@
                 <p class="link"><a href="/news">News</a></p>
                 <p class="link"><a href="/planet">Today's planet</a></p>
                 <p class="link"><a href="/events">Upcoming events</a></p>
+                <p class="link"><a href="/add">Add news</a></p>
             </div>
         </div>
         @yield('content')
