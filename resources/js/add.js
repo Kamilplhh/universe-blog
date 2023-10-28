@@ -19,13 +19,27 @@ const firstS = '<label for="upload1" class="col-6 offset-md-3 mt-1">' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
 const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
-    '<div class="photo addPhoto col-6 offset-md-3 mt-1 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
-    '<div></div>' +
-    '<div class="photo addPhoto col-4 mt-5 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
-    '<div class="photo addPhoto px-2 col-4 mt-5 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
-    '<div class="photo addPhoto col-4 mt-5 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+    '<label for="upload1" class="col-6 offset-md-3 mt-1">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +       
+        '<input type="file" id="upload1" style="display:none">' +
+    '</label>' +
+    '<label for="upload2" class="col-4 mt-5">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload2" style="display:none">' +
+    '</label>' +
+    '<label for="upload3" class="px-2 col-4 mt-5">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload3" style="display:none">' +
+    '</label>' +
+    '<label for="upload4" class="col-4 mt-5">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload4" style="display:none">' +
+    '</label>' +
     '<textarea class="col-12 my-4 addInput" placeholder="News main text"></textarea>' +
-    '<div class="photo addPhoto col-4 my-5 mb-4 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+    '<label for="upload5" class="col-4 my-5 mb-4">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload5" style="display:none">' +
+    '</label>' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
 const thirdS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
