@@ -18,7 +18,8 @@
                 <p>EXOTIC OBJECTS, MILKY WAY</p>
                 Rising star in astronomy: Katie Bouman
             </div>
-            <div class="col-12 mt-5">
+            <div class="photo col-5 mt-5"></div>
+            <div class="text col-7 mt-5">
                 <p>EXOTIC OBJECTS, MILKY WAY</p>
                 Rising star in astronomy: Katie Bouman
             </div>
