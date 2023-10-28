@@ -43,7 +43,10 @@ const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput"
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
 const thirdS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
-    '<div class="photo addPhoto col-10 offset-md-1 my-3 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+    '<label for="upload1" class="col-10 offset-md-1 my-3">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +  
+        '<input type="file" id="upload1" style="display:none">' +
+    '</label>' +
     '<textarea class="col-10 offset-md-1 my-4 addInput" placeholder="News main text"></textarea>';
 
 $(document).ready(style1());
