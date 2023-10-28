@@ -16,8 +16,10 @@
                 </select>
             </div>
         </div>
-        <div id="addPanel" class="row">
-        </div>
+        <form action="">
+            <div id="addPanel" class="row">
+            </div>
+        </form>
     </div>
 </div>
 @stop

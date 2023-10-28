@@ -2,7 +2,8 @@ import '../css/add.css';
 import $ from 'jquery';
 window.$ = $;
 
-const firstS = '<label for="upload1" class="col-6 offset-md-3 mt-1">' +      
+const firstS = '<input type="hidden" name="style" value="1"></input>' +
+    '<label for="upload1" class="col-6 offset-md-3 mt-1">' +      
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
         '<input type="file" id="upload1" style="display:none">' +
     '</label>' +
@@ -18,7 +19,8 @@ const firstS = '<label for="upload1" class="col-6 offset-md-3 mt-1">' +
     '</label>' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
-const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
+const secondS = '<input type="hidden" name="style" value="2"></input>' +
+    '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
     '<label for="upload1" class="col-6 offset-md-3 mt-1">' +
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +       
         '<input type="file" id="upload1" style="display:none">' +
@@ -42,7 +44,8 @@ const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput"
     '</label>' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
-const thirdS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
+const thirdS = '<input type="hidden" name="style" value="3"></input>' +
+    '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
     '<label for="upload1" class="col-10 offset-md-1 my-3">' +
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +  
         '<input type="file" id="upload1" style="display:none">' +
