@@ -2,11 +2,20 @@ import '../css/add.css';
 import $ from 'jquery';
 window.$ = $;
 
-const firstS = '<div class="photo addPhoto col-6 offset-md-3 mt-1 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+const firstS = '<label for="upload1" class="col-6 offset-md-3 mt-1">' +      
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload1" style="display:none">' +
+    '</label>' +
     '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +
     '<textarea class="col-7 mt-2 addInput" placeholder="News main text"></textarea>' +
-    '<div class="photo addPhoto offset-md-1 col-4 my-5 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
-    '<div class="photo addPhoto col-4 my-5 mb-4 d-flex flex-column justify-content-center align-items-center">ADD PHOTO</div>' +
+    '<label for="upload2" class="offset-md-1 col-4 my-5">' +
+        '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload2" style="display:none">' +
+    '</label>' +
+    '<label for="upload3" class="col-4 my-5 mb-4">' +  
+    '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
+        '<input type="file" id="upload3" style="display:none">' +
+    '</label>' +
     '<textarea class="col-7 offset-md-1 mt-4 addInput" placeholder="Second main text"></textarea>';
 
 const secondS = '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title"></input>' +

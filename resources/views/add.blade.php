@@ -17,7 +17,6 @@
             </div>
         </div>
         <div id="addPanel" class="row">
-
         </div>
     </div>
 </div>
