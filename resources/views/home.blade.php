@@ -8,7 +8,7 @@
         @php($i = 0)
         @foreach($objects as $object)
 
-        @if($i <= 3) 
+        @if($i <= 2) 
         <!-- Big block -->
             <div class="row">
                 @if($i == 0)
@@ -35,20 +35,39 @@
                 </div>
                 @endif
             </div>
-            @endif
+        @endif
 
-
-            <!-- Carousel block -->
-            <div class="carousel">
+            @if($i >= 3 && $i <= 6)
+                <!-- Carousel block -->
+                <div class="carousel">
+                    <div class="row">
+                        <div class="col-lg-5 offset-lg-1 col-md-12">
+                            <div class="photo"></div>
+                            <div class="text">
+                                <p>MILKY WAY, OBSERVING</p>
+                                Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="photo"></div>
+                            <div class="text">
+                                <p>EXOTIC OBJECTS, MILKY WAY</p>
+                                Rising star in astronomy: Katie Bouman
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @else
+                <!-- News block -->
                 <div class="row">
-                    <div class="col-lg-5 offset-lg-1 col-md-12">
+                    <div class="col-lg-5 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
                             <p>MILKY WAY, OBSERVING</p>
                             Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-5 offset-lg-1 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
                             <p>EXOTIC OBJECTS, MILKY WAY</p>
@@ -56,25 +75,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- News block -->
-            <div class="row">
-                <div class="col-lg-5 col-md-12">
-                    <div class="photo"></div>
-                    <div class="text">
-                        <p>MILKY WAY, OBSERVING</p>
-                        Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-md-12">
-                    <div class="photo"></div>
-                    <div class="text">
-                        <p>EXOTIC OBJECTS, MILKY WAY</p>
-                        Rising star in astronomy: Katie Bouman
-                    </div>
-                </div>
-            </div>
-
+            @endif
 
             @php($i++)
             @endforeach
