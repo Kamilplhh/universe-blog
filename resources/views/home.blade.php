@@ -41,6 +41,7 @@
             <!-- Carousel block -->
                 <div class="carousel">
                     <div class="row">
+                        @if($i%2!==0)
                         <div class="col-lg-5 offset-lg-1 col-md-12">
                             <div class="photo"></div>
                             <div class="text">
@@ -48,6 +49,7 @@
                                 {{ (Str::limit($object->mainText, 50)) . "..." }}
                             </div>
                         </div>
+                        @else
                         <div class="col-lg-6 col-md-12">
                             <div class="photo"></div>
                             <div class="text">
@@ -55,11 +57,13 @@
                                 {{ (Str::limit($object->mainText, 50)) . "..." }}
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
                 @else
                 <!-- News block -->
                 <div class="row">
+                    @if($i%2!==0)
                     <div class="col-lg-5 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
@@ -67,6 +71,7 @@
                             {{ (Str::limit($object->mainText, 50)) . "..." }}
                         </div>
                     </div>
+                    @else
                     <div class="col-lg-5 offset-lg-1 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
@@ -74,6 +79,7 @@
                             {{ (Str::limit($object->mainText, 50)) . "..." }}
                         </div>
                     </div>
+                    @endif
                 </div>
                 @endif
 
