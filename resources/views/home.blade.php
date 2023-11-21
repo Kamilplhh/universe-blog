@@ -15,8 +15,8 @@
                 <div class="col-xl-7 col-lg-12">
                     <div class="photo onePhoto"></div>
                     <div class="text">
-                        <p>MILKY WAY, OBSERVING</p>
-                        Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
+                        <p>{{($object->title)}}</p>
+                        {{ (Str::limit($object->mainText, 50)) . "..." }}
                     </div>
                 </div>
                 @endif
@@ -24,75 +24,75 @@
                 <div class="col-xl-5 col-lg-12">
                     <div class="photo"></div>
                     <div class="text">
-                        <p>EXOTIC OBJECTS, MILKY WAY</p>
-                        Rising star in astronomy: Katie Bouman
+                        <p>{{($object->title)}}</p>
+                        {{ (Str::limit($object->mainText, 50)) . "..." }}
                     </div>
                     <div class="photo"></div>
                     <div class="text">
-                        <p>EXOTIC OBJECTS, MILKY WAY</p>
-                        Rising star in astronomy: Katie Bouman
+                        <p>{{($object->title)}}</p>
+                        {{ (Str::limit($object->mainText, 50)) . "..." }}
                     </div>
                 </div>
                 @endif
             </div>
-        @endif
+            @endif
 
-            @if($i >= 3 && $i <= 6)
-                <!-- Carousel block -->
+            @if($i >= 3 && $i <= 6) 
+            <!-- Carousel block -->
                 <div class="carousel">
                     <div class="row">
                         <div class="col-lg-5 offset-lg-1 col-md-12">
                             <div class="photo"></div>
                             <div class="text">
-                                <p>MILKY WAY, OBSERVING</p>
-                                Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
+                                <p>{{($object->title)}}</p>
+                                {{ (Str::limit($object->mainText, 50)) . "..." }}
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <div class="photo"></div>
                             <div class="text">
-                                <p>EXOTIC OBJECTS, MILKY WAY</p>
-                                Rising star in astronomy: Katie Bouman
+                                <p>{{($object->title)}}</p>
+                                {{ (Str::limit($object->mainText, 50)) . "..." }}
                             </div>
                         </div>
                     </div>
                 </div>
-            @else
+                @else
                 <!-- News block -->
                 <div class="row">
                     <div class="col-lg-5 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
-                            <p>MILKY WAY, OBSERVING</p>
-                            Find the center of the Milky Way: This Week in Astronomy with Dave Eicher
+                            <p>{{($object->title)}}</p>
+                            {{ (Str::limit($object->mainText, 50)) . "..." }}
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 col-md-12">
                         <div class="photo"></div>
                         <div class="text">
-                            <p>EXOTIC OBJECTS, MILKY WAY</p>
-                            Rising star in astronomy: Katie Bouman
+                            <p>{{($object->title)}}</p>
+                            {{ (Str::limit($object->mainText, 50)) . "..." }}
                         </div>
                     </div>
                 </div>
-            @endif
+                @endif
 
-            @php($i++)
-            @endforeach
-            <div class="astronauts">
-                <h2>People in space now</h2>
-                <ul>
-                    <li>
-                        test
-                    </li>
-                    <li>
-                        test
-                    </li>
-                    <li>
-                        test
-                    </li>
-                </ul>
-            </div>
+                @php($i++)
+                @endforeach
+                <div class="astronauts">
+                    <h2>People in space now</h2>
+                    <ul>
+                        <li>
+                            test
+                        </li>
+                        <li>
+                            test
+                        </li>
+                        <li>
+                            test
+                        </li>
+                    </ul>
+                </div>
     </div>
 </div>
 @stop
