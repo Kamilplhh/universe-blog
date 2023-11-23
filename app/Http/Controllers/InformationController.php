@@ -13,4 +13,11 @@ class InformationController extends Controller
     {
         $this->InformationRepository = $InformationRepository;
     }
+
+    public function index()
+    {
+        $objects = $this->InformationRepository->getAll();
+
+        return view('home', compact('objects'));
+    }
 }

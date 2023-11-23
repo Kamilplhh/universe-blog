@@ -4,5 +4,5 @@ namespace App\Interfaces;
 
 interface InformationRepositoryInterface
 {
-    public function getAllNews();
+    public function getAll();
 }

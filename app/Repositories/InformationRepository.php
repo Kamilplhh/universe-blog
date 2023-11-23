@@ -7,7 +7,7 @@ use App\Models\Information;
 
 class InformationRepository implements InformationRepositoryInterface 
 {
-    public function getAllNews() 
+    public function getAll() 
     {
         return Information::all();
     }
