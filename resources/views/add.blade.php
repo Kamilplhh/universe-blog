@@ -7,6 +7,14 @@
     <div class="homeContent">
         <h1>Add News</h1>
         <div class="mt-1 text-center">
+            <label for="format-select">Format:</label><br>
+            <div class="dropdown dropdown-dark">
+                <select name="styles" id="format-select" class="dropdown-select">
+                    <option value="1">News</option>
+                    <option value="2">Events</option>
+                    <option value="3">Planet</option>
+                </select>
+            </div><br>
             <label for="style-select">Choose style:</label><br>
             <div class="dropdown dropdown-dark">
                 <select name="styles" id="style-select" class="dropdown-select">
