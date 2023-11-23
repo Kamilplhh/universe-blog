@@ -6,16 +6,13 @@
     <div class="homeContent">
         <h1>Events</h1>
         <div class="row mt-2">
-            <div class="photo col-4 offset-md-1 mt-5"></div>
-            <div class="text col-7 mt-5">
-                <p>EXOTIC OBJECTS, MILKY WAY</p>
-                Rising star in astronomy: Katie Bouman
+        @foreach($objects as $object)
+            <div class="photo col-lg-4 col-md-7 offset-md-1 mt-5"></div>
+            <div class="text col-lg-5 col-md-4 mt-5">
+                <p>{{($object->title)}}</p>
+                {{ (Str::limit($object->mainText, 50)) . "..." }}
             </div>
-            <div class="photo col-4 offset-md-1 mt-5"></div>
-            <div class="text col-7 mt-5">
-                <p>EXOTIC OBJECTS, MILKY WAY</p>
-                Rising star in astronomy: Katie Bouman
-            </div>
+        @endforeach
         </div>
 
     </div>

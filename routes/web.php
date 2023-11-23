@@ -18,12 +18,10 @@ Route::get('/', [InformationController::class, 'index']);
 
 Route::get('/news', [InformationController::class, 'news']);
 
+Route::get('/events', [InformationController::class, 'events']);
+
 Route::get('/planet', function () {
     return view('planet');
-});
-
-Route::get('/events', function () {
-    return view('events');
 });
 
 Route::get('/add', function () {
