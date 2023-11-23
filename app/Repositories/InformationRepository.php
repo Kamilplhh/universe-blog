@@ -11,4 +11,14 @@ class InformationRepository implements InformationRepositoryInterface
     {
         return Information::all();
     }
+
+    public function getNews() 
+    {
+        return Information::orderBy('created_at', 'DESC')->where('category', '=', 'News')->get();
+    }
+
+    public function getEvents() 
+    {
+        return Information::orderBy('created_at', 'DESC')->where('category', '=', 'Event')->get();
+    }
 }

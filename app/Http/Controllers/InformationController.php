@@ -20,4 +20,18 @@ class InformationController extends Controller
 
         return view('home', compact('objects'));
     }
+
+    public function news()
+    {
+        $objects = $this->InformationRepository->getNews();
+
+        return view('news', compact('objects'));
+    }
+
+    public function events()
+    {
+        $objects = $this->InformationRepository->getEvents();
+
+        return view('events', compact('objects'));
+    }
 }
