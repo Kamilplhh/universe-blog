@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [InformationController::class, 'index']);
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', [InformationController::class, 'news']);
 
 Route::get('/planet', function () {
     return view('planet');
