@@ -6,14 +6,18 @@
     <div class="homeContent">
         <h1>Today's planet</h1>
         <div class="row">
-                <div class="col-12"></div>
+                @if(isset($object['photo']))
+                <div class="col-12">
+                    {{ $object['photo'] }}
+                </div>
+                @endif
                 <div class="text-center col-12 mt-5">
-                    <p>Saturn</p>
+                    <p>{{ $object['title'] }}</p>
                 </div>
                 
             </div>
             <div class="col-12 mt-5">
-                Rising star in astronomy: Katie Bouman
+                {{ $object['text'] }}
             </div>
         </div>
 
