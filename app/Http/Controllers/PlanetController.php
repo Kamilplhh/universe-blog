@@ -7,7 +7,7 @@ use App\Models\Planet;
 
 class PlanetController extends Controller
 {
-    public function getAll() 
+    public function getPlanet() 
     {
         $objects = Planet::inRandomOrder()
         ->where('seen', '=', 'no')

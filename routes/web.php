@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\PlanetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,7 @@ Route::get('/news', [InformationController::class, 'news']);
 
 Route::get('/events', [InformationController::class, 'events']);
 
-Route::get('/planet', function () {
-    return view('planet');
-});
+Route::get('/planet', [PlanetController::class, 'getPlanet']);
 
 Route::get('/add', function () {
     return view('add');
