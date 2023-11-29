@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('text');
+            $table->string('seen')->default('no');
             $table->string('photo');
             $table->timestamps();
         });
