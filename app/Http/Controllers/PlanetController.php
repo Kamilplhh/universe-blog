@@ -14,6 +14,8 @@ class PlanetController extends Controller
         ->limit(1)
         ->get();
         
+        Planet::where('id', '=', $object['id'])->update(['seen' => 'yes']);
+
         return view('planet', compact('object'));
     }
 }
