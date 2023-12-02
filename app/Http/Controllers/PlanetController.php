@@ -10,11 +10,9 @@ class PlanetController extends Controller
     public function getPlanet() 
     {
         $object = Planet::inRandomOrder()
-        ->where('seen', '=', 'no')
+        ->where('status', '=', 'active')
         ->limit(1)
         ->get();
-        
-        Planet::where('id', '=', $object['id'])->update(['seen' => 'yes']);
 
         return view('planet', compact('object'));
     }
