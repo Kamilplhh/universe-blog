@@ -26,6 +26,8 @@ class setTodayPlanet extends Command
      */
     public function handle()
     {
+        Planet::where('status', '=', 'active')->update(['status' => 'done']);
+
         $object = Planet::inRandomOrder()
         ->where('status', '=', 'null')
         ->limit(1)
