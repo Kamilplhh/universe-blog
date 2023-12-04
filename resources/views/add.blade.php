@@ -24,7 +24,8 @@
                 </select>
             </div>
         </div>
-        <form action="">
+        <form enctype="multipart/form-data" method="POST" action="{{ route('addPlanet') }}">
+            @csrf
             <div id="addPanel" class="row">
             </div>
         </form>

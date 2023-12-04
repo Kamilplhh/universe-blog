@@ -26,3 +26,5 @@ Route::get('/planet', [PlanetController::class, 'getPlanet']);
 Route::get('/add', function () {
     return view('add');
 });
+
+Route::POST('/planet', [PlanetController::class, 'addPlanet']);
