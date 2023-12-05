@@ -61,19 +61,32 @@ $("#style-select").on("change", function () {
     if (selected == 1) style1();
     else if (selected == 2) style2();
     else style3();
-
-    $('#addPanel').append('<button type="submit">Test</button>');
 });
 
 function style1() {
+    let format = $("#format-select option:selected").val();
+
+    $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(firstS);
+    $('#addPanel').append('<button type="submit">Test</button>');
 }
 
 function style2() {
+    let format = $("#format-select option:selected").val();
+
+    $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(secondS);
+    $('#addPanel').append('<button type="submit">Test</button>');
 }
 
 function style3() {
+    let format = $("#format-select option:selected").val();
+
+    $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(thirdS);
+    $('#addPanel').append('<button type="submit">Test</button>');
 }
 
+$("#format-select").on("change", function () {
+    $('#category').val($(this).val());
+});

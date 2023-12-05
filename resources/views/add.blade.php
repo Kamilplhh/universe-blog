@@ -10,13 +10,13 @@
             <label for="format-select">Format:</label><br>
             <div class="dropdown dropdown-dark">
                 <select name="styles" id="format-select" class="dropdown-select">
-                    <option value="1">News</option>
-                    <option value="2">Events</option>
-                    <option value="3">Planet</option>
+                    <option value="News">News</option>
+                    <option value="Events">Events</option>
+                    <option value="Planet">Planet</option>
                 </select>
             </div><br>
             <label for="style-select">Choose style:</label><br>
-            <div class="dropdown dropdown-dark">
+            <div class="dropdown dropdown-dark mb-2">
                 <select name="styles" id="style-select" class="dropdown-select">
                     <option value="1">Style #1</option>
                     <option value="2">Style #2</option>
