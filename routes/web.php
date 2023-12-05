@@ -27,4 +27,4 @@ Route::get('/add', function () {
     return view('add');
 });
 
-Route::POST('/planet', [PlanetController::class, 'addPlanet']);
+Route::post('addPlanet', [PlanetController::class, 'addPlanet'])->name('addPlanet'); 

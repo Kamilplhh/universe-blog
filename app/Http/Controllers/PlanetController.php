@@ -17,8 +17,8 @@ class PlanetController extends Controller
         return view('planet', compact('object'));
     }
 
-    public function addPlanet() 
+    public function addPlanet(Request $request) 
     {
-
+        dd($request);
     }
 }
