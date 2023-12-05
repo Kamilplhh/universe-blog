@@ -5,7 +5,7 @@ window.$ = $;
 const firstS = '<input type="hidden" name="format" value="1"></input>' +
     '<label for="upload1" class="col-6 offset-md-3 mt-1">' +      
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
-        '<input type="file" id="upload1" style="display:none" name="photo1" required>' +
+        '<input type="file" id="upload1" style="display:none" name="photo1">' +
     '</label>' +
     '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title" name="title" required></input>' +
     '<textarea class="col-7 mt-2 addInput" placeholder="News main text" name="mainText" required></textarea>' +
@@ -23,7 +23,7 @@ const secondS = '<input type="hidden" name="format" value="2"></input>' +
     '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title" name="title" required></input>' +
     '<label for="upload1" class="col-6 offset-md-3 mt-1">' +
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +       
-        '<input type="file" id="upload1" style="display:none" name="photo1" required>' +
+        '<input type="file" id="upload1" style="display:none" name="photo1">' +
     '</label>' +
     '<label for="upload2" class="col-4 mt-5">' +
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +
@@ -48,7 +48,7 @@ const thirdS = '<input type="hidden" name="format" value="3"></input>' +
     '<input type="text" class="col-6 offset-md-3 mt-1 mb-4 addInput" placeholder="News title" name="title" required></input>' +
     '<label for="upload1" class="col-10 offset-md-1 my-3">' +
         '<div class="photo addPhoto d-flex flex-column justify-content-center align-items-center" aria-hidden="true">ADD PHOTO</div>' +  
-        '<input type="file" id="upload1" style="display:none" name="photo1" required>' +
+        '<input type="file" id="upload1" style="display:none" name="photo1">' +
     '</label>' +
     '<textarea class="col-10 offset-md-1 my-4 addInput" placeholder="News main text" name="mainText" required></textarea>';
 
