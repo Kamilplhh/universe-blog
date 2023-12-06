@@ -21,16 +21,17 @@ class PlanetController extends Controller
     {
         $request->validate([
             'title' => ['required', 'string', 'max:255'],
-            'mainText' => ['required', 'text'],
-            'mainText' => ['nullable', 'text'],
-            'photo1' => ['required', 'mimes:jpg,png', 'max:1024'],
-            'photo2' => ['nullable', 'mimes:jpg,png', 'max:1024'],
-            'photo3' => ['nullable', 'mimes:jpg,png', 'max:1024'],
-            'photo4' => ['nullable', 'mimes:jpg,png', 'max:1024'],
-            'photo5' => ['nullable', 'mimes:jpg,png', 'max:1024'],
-            'format' => ['required', 'number'],
-            'emailPort' => ['required', 'string', 'max:20'],
+            'mainText' => ['required', 'max:5000'],
+            'mainText' => ['nullable', 'max:5000'],
+            'photo1' => ['required', 'mimes:jpg,png'],
+            'photo2' => ['nullable', 'mimes:jpg,png'],
+            'photo3' => ['nullable', 'mimes:jpg,png'],
+            'photo4' => ['nullable', 'mimes:jpg,png'],
+            'photo5' => ['nullable', 'mimes:jpg,png'],
+            'format' => ['required', 'numeric'],
+            'category' => ['required', 'string', 'max:20'],
         ]);
+
         dd($request);
     }
 }
