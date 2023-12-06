@@ -90,3 +90,10 @@ function style3() {
 $("#format-select").on("change", function () {
     $('#category').val($(this).val());
 });
+
+$('#formPlanet').on("submit", function(event) {  
+    if($('#upload1').val() === ""){
+        event.preventDefault();
+        alert("Please fill the fist photo bracket");
+    }
+})
