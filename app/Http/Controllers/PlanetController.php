@@ -19,6 +19,18 @@ class PlanetController extends Controller
 
     public function addPlanet(Request $request) 
     {
+        $request->validate([
+            'title' => ['required', 'string', 'max:255'],
+            'mainText' => ['required', 'text'],
+            'mainText' => ['nullable', 'text'],
+            'photo1' => ['required', 'mimes:jpg,png', 'max:1024'],
+            'photo2' => ['nullable', 'mimes:jpg,png', 'max:1024'],
+            'photo3' => ['nullable', 'mimes:jpg,png', 'max:1024'],
+            'photo4' => ['nullable', 'mimes:jpg,png', 'max:1024'],
+            'photo5' => ['nullable', 'mimes:jpg,png', 'max:1024'],
+            'format' => ['required', 'number'],
+            'emailPort' => ['required', 'string', 'max:20'],
+        ]);
         dd($request);
     }
 }
