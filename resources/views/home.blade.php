@@ -8,8 +8,7 @@
         @php($i = 0)
         @foreach($objects as $object)
 
-        @if($i <= 2) 
-        <!-- Big block -->
+        @if($i <= 2) <!-- Big block -->
             <div class="row">
                 @if($i == 0)
                 <div class="col-xl-7 col-lg-12">
@@ -37,8 +36,7 @@
             </div>
             @endif
 
-            @if($i >= 3 && $i <= 6) 
-            <!-- Carousel block -->
+            @if($i >= 3 && $i <= 6) <!-- Carousel block -->
                 <div class="carousel">
                     <div class="row">
                         @if($i%2!==0)
@@ -88,17 +86,17 @@
                 <div class="astronauts">
                     <h2>People in space now</h2>
                     <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">Source</a>
+                    @if(isset($pets))
+                    {{ message }}
+                    @else
                     <ul>
+                        @foreach($peoples as $people)
                         <li>
-                            test
+                            {{ people->name }}
                         </li>
-                        <li>
-                            test
-                        </li>
-                        <li>
-                            test
-                        </li>
+                        @endforeach
                     </ul>
+                    @endif
                 </div>
     </div>
 </div>
