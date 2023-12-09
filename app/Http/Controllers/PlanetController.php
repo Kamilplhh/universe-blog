@@ -17,7 +17,7 @@ class PlanetController extends Controller
         return view('planet', compact('object'));
     }
 
-    public function addPlanet(Request $request) 
+    public function addNews(Request $request) 
     {
         $request->validate([
             'title' => ['required', 'string', 'max:255'],
