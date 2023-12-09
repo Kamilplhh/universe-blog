@@ -92,7 +92,8 @@
                     <ul>
                         @foreach($peoples as $people)
                         <li>
-                            
+                            {{ $people['name'] }} <br>
+                            {{ $people['craft'] }} 
                         </li>
                         @endforeach
                     </ul>
