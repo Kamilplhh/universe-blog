@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Interfaces\InformationRepositoryInterface;
+use Exception;
+use Illuminate\Support\Facades\Http;
 
 class InformationController extends Controller
 {
     private InformationRepositoryInterface $InformationRepository;
 
-    public function __construct(InformationRepositoryInterface $InformationRepository) 
+    public function __construct(InformationRepositoryInterface $InformationRepository)
     {
         $this->InformationRepository = $InformationRepository;
     }
@@ -18,7 +20,23 @@ class InformationController extends Controller
     {
         $objects = $this->InformationRepository->getAll();
 
-        return view('home', compact('objects'));
+        try {
+            $response = Http::get('http://api.open-notify.org/astros.json');
+            if ($response->successful()) {
+                $Array = $response->json();
+                $people = collect($Array['people'])->random(3);
+
+                return view('home', compact('objects', 'people'));
+            } else {
+                $message = "There's 0 people out in the space right now.";
+
+                return view('home', compact('objects', 'message'));
+            }
+        } catch (Exception $e) {
+            $message = 'Wystąpił błąd: ' . $e->getMessage();
+            
+            return view('home', compact('objects', 'message'));
+        }
     }
 
     public function news()
