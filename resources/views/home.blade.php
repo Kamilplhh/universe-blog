@@ -92,7 +92,7 @@
                     <ul>
                         @foreach($peoples as $people)
                         <li>
-                            {{ people->name }}
+                            
                         </li>
                         @endforeach
                     </ul>

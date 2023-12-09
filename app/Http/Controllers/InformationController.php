@@ -24,9 +24,9 @@ class InformationController extends Controller
             $response = Http::get('http://api.open-notify.org/astros.json');
             if ($response->successful()) {
                 $Array = $response->json();
-                $people = collect($Array['people'])->random(3);
+                $peoples = collect($Array['people'])->random(3);
 
-                return view('home', compact('objects', 'people'));
+                return view('home', compact('objects', 'peoples'));
             } else {
                 $message = "There's 0 people out in the space right now.";
 
