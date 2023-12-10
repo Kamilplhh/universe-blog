@@ -25,7 +25,7 @@ class InformationController extends Controller
             if ($response->successful()) {
                 $Array = $response->json();
                 $peoples = $Array['people'];
-                $peoples = (array_slice($peoples, 0, 10));
+                $peoples = (array_slice($peoples, 0, 9));
 
                 return view('home', compact('objects', 'peoples'));
             } else {

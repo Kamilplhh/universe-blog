@@ -85,18 +85,18 @@
                 @endforeach
                 <div class="astronauts">
                     <h2>People in space now</h2>
-                    First 10 <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">(source)</a>
+                    First 9 <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">(source)</a>
                     @if(isset($pets))
                     {{ message }}
                     @else
-                    <ul>
+                    <div class="row mt-3">
                         @foreach($peoples as $people)
-                        <li>
+                        <div class="col-4 py-2">
                             <a href="{{ 'https://www.google.com/search?q=' . $people['name'] }}" target="_blank">{{ $people['name'] }}</a><br>
-                            {{ $people['craft'] }} 
-                        </li>
+                            {{ $people['craft'] }}
+                        </div>
                         @endforeach
-                    </ul>
+                    </div>
                     @endif
                 </div>
     </div>
