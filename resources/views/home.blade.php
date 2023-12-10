@@ -92,7 +92,7 @@
                     <ul>
                         @foreach($peoples as $people)
                         <li>
-                            {{ $people['name'] }} <br>
+                            <a href="{{ 'https://www.google.com/search?q=' . $people['name'] }}" target="_blank">{{ $people['name'] }}</a><br>
                             {{ $people['craft'] }} 
                         </li>
                         @endforeach
