@@ -85,7 +85,7 @@
                 @endforeach
                 <div class="astronauts">
                     <h2>People in space now</h2>
-                    <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">Source</a>
+                    First 10 <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">(source)</a>
                     @if(isset($pets))
                     {{ message }}
                     @else
