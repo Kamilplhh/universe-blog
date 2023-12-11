@@ -69,6 +69,8 @@ class InformationController extends Controller
             'category' => ['required', 'string', 'max:20'],
         ]);
 
-        dd($request);
+        $fileArray = $request->all([]);
+        $this->InformationRepository->addNews($fileArray);
+        return redirect()->back();
     }
 }
