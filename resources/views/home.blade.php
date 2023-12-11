@@ -83,6 +83,8 @@
 
                 @php($i++)
                 @endforeach
+
+                <!-- Astronauts block -->
                 <div class="astronauts">
                     <h2>People in space now</h2>
                     First 9 <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">(source)</a>
