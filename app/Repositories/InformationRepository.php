@@ -21,4 +21,9 @@ class InformationRepository implements InformationRepositoryInterface
     {
         return Information::orderBy('created_at', 'DESC')->where('category', '=', 'Event')->get();
     }
+
+    public function addNews(array $file)
+    {
+        return Information::create($file);
+    }
 }
