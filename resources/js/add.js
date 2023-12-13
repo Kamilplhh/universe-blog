@@ -68,7 +68,7 @@ function style1() {
 
     $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(firstS);
-    $('#addPanel').append('<button type="submit" class="submit">Confirm</button>');
+    $('#addPanel').append('<div class="col-12 text-center"><button type="submit" class="submit">Confirm</button></div>');
 }
 
 function style2() {
@@ -76,7 +76,7 @@ function style2() {
 
     $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(secondS);
-    $('#addPanel').append('<button type="submit" class="submit">Confirm</button>');
+    $('#addPanel').append('<div class="col-12 text-center"><button type="submit" class="submit">Confirm</button></div>');
 }
 
 function style3() {
@@ -84,7 +84,7 @@ function style3() {
 
     $('#addPanel').append('<input type="hidden" id="category" name="category" value="'+ format +'"></input>');
     $('#addPanel').append(thirdS);
-    $('#addPanel').append('<button type="submit" class="submit">Confirm</button>');
+    $('#addPanel').append('<div class="col-12 text-center"><button type="submit" class="submit">Confirm</button></div>');
 }
 
 $("#format-select").on("change", function () {
