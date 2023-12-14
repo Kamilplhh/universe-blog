@@ -22,16 +22,16 @@
             <p class="dot"></p>
         </div>
     </div>
-    <div class="mobileNavbar">
-        <div class="d-flex justify-content-around">
-            <p class="link"><a href="/">Home</a></p>
-            <p class="link"><a href="/news">News</a></p>
-            <p class="link"><a href="/planet">Today's planet</a></p>
-            <p class="link"><a href="/events">Upcoming events</a></p>
-            <p class="link"><a href="/add">Add news</a></p>
-        </div>
-    </div>
     <div class="content">
+        <div class="mobileNavbar">
+            <div class="d-flex justify-content-around">
+                <p class="link"><a href="/">Home</a></p>
+                <p class="link"><a href="/news">News</a></p>
+                <p class="link"><a href="/planet">Today's planet</a></p>
+                <p class="link"><a href="/events">Upcoming events</a></p>
+                <p class="link"><a href="/add">Add news</a></p>
+            </div>
+        </div>
         <div class="navigation">
             <div class="navbar">
                 <p class="link"><a href="/">Home</a></p>
