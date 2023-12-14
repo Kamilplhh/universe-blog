@@ -152,14 +152,21 @@ a:hover {
 }
 
 @media only screen and (max-width: 1199px) {
-    .navbar {
-        width: 15% !important;
+    .navigation {
+        width: 1px !important;
+        display: none !important;
     }
+
+    .home {
+        margin-left: auto !important;
+    }
+    
 }
 
 @media only screen and (max-width: 599px) {
-    .navbar {
-        display: none;
-        width: 0% !important;
+    
+    .home {
+        margin-left: 0% !important;
+        width: 100% !important;
     }
 }

@@ -96,23 +96,4 @@
     .onePhoto {
         height: 80% !important;
     }
-
-    .home {
-        margin-left: 18% !important;
-    }
-
-    .homeContent h1 {
-        left: 20% !important;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .home {
-        margin-left: 0% !important;
-        width: 100% !important;
-    }
-
-    .homeContent h1 {
-        left: 0% !important;
-    }
 }
