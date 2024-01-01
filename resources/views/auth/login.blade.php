@@ -8,7 +8,7 @@
         <a class='on-login button' id="login">Login</a>
         <a class='off-login button' id="register">Register</a>
         <div class="login">
-            <form method="POST">
+            <form method="POST" action="{{ route('login') }}">
                 @csrf
                 <div class="row">
                     <input type="text" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Login" name="login" required></input>
@@ -18,12 +18,12 @@
             </form>
         </div>
         <div class="register">
-            <form method="POST">
+            <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="row">
                     <input type="text" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Login" name="login" required></input>
                     <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Password" name="password" required></input>
-                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Repeat password" name="password" required></input>
+                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Repeat password" required></input>
                     <div class="col-12 text-center"><button type="submit" class="submit">Register</button></div>
                 </div>
             </form>

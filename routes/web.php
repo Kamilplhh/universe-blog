@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', [AuthController::class, 'login']);
+Route::get('/login', [AuthController::class, 'index']);
+
+Route::post('login', [AuthController::class, 'login'])->name('login'); 
+
+Route::post('register', [AuthController::class, 'register'])->name('register'); 
 
 Route::get('/', [InformationController::class, 'index'])->name('home');
 
