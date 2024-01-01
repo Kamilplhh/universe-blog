@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\PlanetController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [InformationController::class, 'index'])->name('home');;
+Route::get('/login', [AuthController::class, 'login']);
+
+Route::get('/', [InformationController::class, 'index'])->name('home');
 
 Route::get('/news', [InformationController::class, 'news']);
 
