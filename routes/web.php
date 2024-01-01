@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [InformationController::class, 'index']);
+Route::get('/', [InformationController::class, 'index'])->name('home');;
 
 Route::get('/news', [InformationController::class, 'news']);
 
@@ -25,6 +25,6 @@ Route::get('/planet', [PlanetController::class, 'getPlanet']);
 
 Route::get('/add', function () {
     return view('add');
-});
+})->middleware('auth');
 
 Route::post('addNews', [InformationController::class, 'addNews'])->name('addNews'); 

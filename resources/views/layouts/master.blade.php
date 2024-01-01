@@ -29,7 +29,9 @@
                 <p class="link"><a href="/news">News</a></p>
                 <p class="link"><a href="/planet">Today's planet</a></p>
                 <p class="link"><a href="/events">Upcoming events</a></p>
+                @auth
                 <p class="link"><a href="/add">Add news</a></p>
+                @endauth
             </div>
         </div>
         <div class="navigation">
@@ -38,7 +40,9 @@
                 <p class="link"><a href="/news">News</a></p>
                 <p class="link"><a href="/planet">Today's planet</a></p>
                 <p class="link"><a href="/events">Upcoming events</a></p>
+                @auth
                 <p class="link"><a href="/add">Add news</a></p>
+                @endauth
             </div>
         </div>
         @yield('content')
