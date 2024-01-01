@@ -31,6 +31,7 @@
                 <p class="link"><a href="/events">Upcoming events</a></p>
                 @auth
                 <p class="link"><a href="/add">Add news</a></p>
+                <p class="link"><a href="/logout">Logout</a></p>
                 @endauth
             </div>
         </div>
@@ -42,6 +43,7 @@
                 <p class="link"><a href="/events">Upcoming events</a></p>
                 @auth
                 <p class="link"><a href="/add">Add news</a></p>
+                <p class="link"><a href="/logout">Logout</a></p>
                 @endauth
             </div>
         </div>
