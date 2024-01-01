@@ -1,11 +1,12 @@
 @extends('layouts.master')
 @vite('resources/css/home.css')
-@vite('resources/css/auth.css')
+@vite('resources/js/auth.js')
 
 @section('content')
 <div class="home">
     <div class="loginContent">
-        <h1>Login</h1>
+        <a class='on-login button' id="login">Login</a>
+        <a class='off-login button' id="register">Register</a>
         <div class="login">
             <form method="POST">
                 @csrf
