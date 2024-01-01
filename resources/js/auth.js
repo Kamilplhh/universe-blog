@@ -32,3 +32,18 @@ function login() {
     $('.register').toggle();
     $('.login').toggle();
 }
+
+$('#new').on("submit", function (event) {
+    let pass = $('#password').val();
+    let pass2 = $('#passwordRepeat').val();
+
+    if (pass.length >= 8) {
+        if (pass !== pass2) {
+            event.preventDefault();
+            alert('The retyped password does not match your password.')
+        }
+    } else {
+        event.preventDefault();
+        alert('Password is too short.')
+    }
+})

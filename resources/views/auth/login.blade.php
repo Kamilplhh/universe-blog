@@ -18,12 +18,12 @@
             </form>
         </div>
         <div class="register">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" id="new" action="{{ route('register') }}">
                 @csrf
                 <div class="row">
                     <input type="text" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Login" name="login" required></input>
-                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Password" name="password" required></input>
-                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Repeat password" required></input>
+                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Password" name="password" id='password' required></input>
+                    <input type="password" class="col-md-6 col-sm-12 offset-md-3 mt-1 mb-4" placeholder="Repeat password" id='passwordRepeat' required></input>
                     <div class="col-12 text-center"><button type="submit" class="submit">Register</button></div>
                 </div>
             </form>
