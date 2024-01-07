@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('photo4')->nullable();
             $table->string('photo5')->nullable();
             $table->bigInteger('format');
-            $table->string('user')->nullable();
             $table->string('category')->default('News');
             $table->timestamps();
         });
