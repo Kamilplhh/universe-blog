@@ -12,7 +12,7 @@
             <div class="row">
                 @if($i == 0)
                 <div class="col-xl-7 col-lg-12">
-                    <div class="photo onePhoto"></div>
+                    <img class="photo onePhoto" src="{{url('pictures/'. $object->photo)}}">
                     <div class="text">
                         <p>{{($object->title)}}</p>
                         {{ (Str::limit($object->mainText, 50)) . "..." }}
@@ -21,12 +21,12 @@
                 @endif
                 @if($i == 1 || $i == 2)
                 <div class="col-xl-5 col-lg-12">
-                    <div class="photo"></div>
+                    <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                     <div class="text">
                         <p>{{($object->title)}}</p>
                         {{ (Str::limit($object->mainText, 50)) . "..." }}
                     </div>
-                    <div class="photo"></div>
+                    <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                     <div class="text">
                         <p>{{($object->title)}}</p>
                         {{ (Str::limit($object->mainText, 50)) . "..." }}
@@ -41,7 +41,7 @@
                     <div class="row">
                         @if($i%2!==0)
                         <div class="col-lg-5 offset-lg-1 col-md-12">
-                            <div class="photo"></div>
+                            <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                             <div class="text">
                                 <p>{{($object->title)}}</p>
                                 {{ (Str::limit($object->mainText, 50)) . "..." }}
@@ -49,7 +49,7 @@
                         </div>
                         @else
                         <div class="col-lg-6 col-md-12">
-                            <div class="photo"></div>
+                            <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                             <div class="text">
                                 <p>{{($object->title)}}</p>
                                 {{ (Str::limit($object->mainText, 50)) . "..." }}
@@ -63,7 +63,7 @@
                 <div class="row">
                     @if($i%2!==0)
                     <div class="col-lg-5 col-md-12">
-                        <div class="photo"></div>
+                        <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                         <div class="text">
                             <p>{{($object->title)}}</p>
                             {{ (Str::limit($object->mainText, 50)) . "..." }}
@@ -71,7 +71,7 @@
                     </div>
                     @else
                     <div class="col-lg-5 offset-lg-1 col-md-12">
-                        <div class="photo"></div>
+                        <img class="photo" src="{{url('pictures/'. $object->photo)}}">
                         <div class="text">
                             <p>{{($object->title)}}</p>
                             {{ (Str::limit($object->mainText, 50)) . "..." }}

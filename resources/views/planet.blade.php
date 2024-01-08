@@ -9,7 +9,7 @@
             @foreach($object as $object)
                 @if(isset($object['photo']))
                 <div class="col-12">
-                    {{ $object['photo'] }}
+                    <img src="{{url('pictures/'. $object['photo'])}}">
                 </div>
                 @endif
                 <div class="text-center col-12 mt-5">

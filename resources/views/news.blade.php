@@ -14,11 +14,11 @@
                 <p>{{($object->title)}}</p>
             </div>
             <div class="col-xl-10 offset-xl-1 col-lg-12">
-                <div class="photo onePhoto"></div>
+                <img class="photo onePhoto" src="{{url('pictures/'. $object->photo)}}">
             </div>
         
         @else
-            <div class="photo col-lg-5 col-md-7 mt-5"></div>
+            <img class="photo col-lg-5 col-md-7 mt-5" src="{{url('pictures/'. $object->photo)}}">
             <div class="text col-lg-5 col-md-5 mt-5">
                 <p>{{($object->title)}}</p>
                 {{ (Str::limit($object->mainText, 50)) . "..." }}

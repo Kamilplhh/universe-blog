@@ -7,7 +7,7 @@
         <h1>Events</h1>
         <div class="row mt-2">
         @foreach($objects as $object)
-            <div class="photo col-lg-4 col-md-7 offset-md-1 mt-5"></div>
+            <img class="photo col-lg-4 col-md-7 offset-md-1 mt-5" src="{{url('pictures/'. $object->photo)}}">
             <div class="text col-lg-5 col-md-4 mt-5">
                 <p>{{($object->title)}}</p>
                 {{ (Str::limit($object->mainText, 50)) . "..." }}
